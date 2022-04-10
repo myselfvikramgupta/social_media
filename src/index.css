@@ -1,0 +1,158 @@
+:root{
+  --color-white:hsl(252,30%,100%);
+  --color-dark:hsl(252,30%,77%);
+  --color-light:hsl(252,30%,95%);
+  --color-black:hsl(252,30%,10%);
+  --color-primary:hsl(162, 92%, 39%);
+}
+*,*::after,*::before{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  outline:none;
+  border:none;
+  list-style:none;
+  text-decoration:none;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  color:var(--color-dark);
+  background:var(--color-light);
+ 
+  
+}
+
+.container{
+  width:80%;
+  margin:0 auto;
+}
+.d_flex_space_between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header{
+  padding:15px;
+  background:var(--color-white);
+  color:var(--color-black);
+  position:fixed;
+  top:0;
+  z-index: 1000;
+  width:100%;
+}
+.header_title{
+  font-size:1.2rem;
+  letter-spacing: 5px;
+}
+
+.main{
+  margin-top:70px;
+}
+.left_side{
+  width:25%;
+  position: relative;
+}
+.middle{
+  width:50%;
+  padding:20px;
+  position: relative;
+}
+.right_side{
+  width:25%;
+  padding:20px;
+  position: relative;
+}
+.btn{
+  outline:none;
+  border:none;
+  padding:10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+.btn_primary{
+  color:var(--color-white);
+  background:var(--color-primary);
+}
+.post_create{
+  background:var(--color-white);
+  border-radius:25px;
+  padding:10px;
+}
+.post_logo svg{
+  fill:var(--color-dark);
+  margin-top: 5px;
+}
+.post_text{
+  width:100%;
+  justify-self: start;
+  padding-left:10px;
+}
+.btn-round{
+  border-radius: 24px;
+}
+.post_list{
+  margin-top:20px;
+}
+.post_card{
+  border-radius: 5px;
+  background:var(--color-white);
+  width:100%;
+  margin-top:5px;
+}
+
+.post_header{
+  padding:10px;
+}
+.user_profile_img{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  border:3px solid;
+  border-color: var(--color-primary);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.user_info{
+  display:flex;
+  align-items: center;
+}
+.user_info img{
+  width:25px;
+  height:25px;
+}
+.user_info span{
+  color:var(--color-black);
+  margin-left: 10px;
+}
+.post_menu img{
+  width:20px;
+}
+.post_title{
+  margin-top:10px;
+}
+.post_body{
+  padding:15px;
+  padding-top: 0;
+  color:var(--color-black);
+  font-size: 15px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .container{
+    width:100%;
+  }
+  .middle{
+    width:100%;
+  }
+  .right_side{
+    width:0;
+    padding:0px;
+  }
+  .left_side{
+    width: 0;
+  }
+}
