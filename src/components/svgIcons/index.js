@@ -1,0 +1,10 @@
+export { default as LikeIcon} from './LikeIcon';
+export { default as CommentIcon} from './CommentIcon';
+export { default as BookMarkIcon} from './BookMarkIcon';
+export { default as SharedIcon} from './SharedIcon';
+export { default as HomeIcon} from './HomeIcon';
+export { default as NotificationIcon} from './NotificationIcon';
+export { default as SettingIcon} from './SettingIcon';
+export { default as CompassIcon} from './CompassIcon';
+export { default as CloseIcon} from './CloseIcon';
+export { default as MenuIcon} from './MenuIcon';
