@@ -262,13 +262,13 @@ body{
     margin-left: 0.7rem;
   }
   .side_menu{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 70%;
     z-index: 1000;
-    transition: all 1s ease;
+    transition: all 1s ease; 
     transform: translateX(-100%);
   }
   .side_menu.active{
@@ -276,7 +276,8 @@ body{
     transform: translateX(0%);
   }
   .side_menu > .card{
-    height:100vh;
+    height:100%;
+    max-height: 100%;
     border-radius: none;
   }
   .side_menu_close{
