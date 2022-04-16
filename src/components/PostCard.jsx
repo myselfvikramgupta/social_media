@@ -20,7 +20,7 @@ function PostCard({post,id}) {
         </div>
     </div>
     <div className="card_body">
-        {post.story} ... <a href=""><em>Read More</em></a>
+        {post.story} ... <a href="#"><em>Read More</em></a>
     </div>
     <div className="card_footer ">
     <div className="d_flex_space_between">
