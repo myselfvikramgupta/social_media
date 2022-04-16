@@ -13,13 +13,13 @@ function Sidebar() {
                         <button className='colse_bnt' onClick={sideMenuClose}><CloseIcon /></button>
                     </div>
                     <div className="sidebar">
-                        <a href="#" className="sidebar_menu_item active">
+                        <a href="/" className="sidebar_menu_item active">
                             <HomeIcon /> <h4>Home</h4>
                         </a>
-                        <a href="#" className="sidebar_menu_item">
+                        <a href="/" className="sidebar_menu_item">
                             <CompassIcon /> <h4>Explore</h4>
                         </a>
-                        <a href="#" className="sidebar_menu_item">
+                        <a href="/" className="sidebar_menu_item">
                             <div className='notify'>
                                 <NotificationIcon />
                                 <span className="notify_alert"></span>
@@ -27,10 +27,10 @@ function Sidebar() {
                             <h4>Notifications</h4>
 
                         </a>
-                        <a href="#" className="sidebar_menu_item">
+                        <a href="/" className="sidebar_menu_item">
                             <BookMarkIcon />  <h4>BookMarks</h4>
                         </a>
-                        <a href="#" className="sidebar_menu_item">
+                        <a href="/" className="sidebar_menu_item">
                             <SettingIcon />  <h4>Settings</h4>
                         </a>
 
