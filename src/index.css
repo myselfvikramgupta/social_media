@@ -26,6 +26,9 @@ body{
   width:80%;
   margin:0 auto;
 }
+button:focus{
+  background:transparent ;
+}
 .row::after {
   content: "";
   clear: both;
@@ -48,7 +51,7 @@ body{
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-
+.col-offset-2{margin-left:16.66%}
 
 .d_flex_space_between{
   display: flex;
@@ -87,9 +90,11 @@ body{
 }
 .post_create{
   background:var(--color-white);
-  border-radius:25px;
+  border-radius:24px;
   padding:10px;
+  cursor:pointer;
 }
+
 .post_logo svg{
   fill:var(--color-dark);
   margin-top: 5px;
@@ -176,14 +181,7 @@ body{
   fill:var(--color-primary);
   animation: bounce 0.5s ease-in-out;
 }
-@keyframes bounce {
-   to{
-     transform:scale(0.5);
-   }
-   from{
-    transform:scale(1);
-   }
-}
+
 .post_like_section{
   width:30%;
 }
@@ -246,9 +244,43 @@ body{
 .colse_bnt{
   display:none;
 }
-
-
-
+.editor_title{
+  padding:20px 10px;
+}
+.editor_title input{
+   font-size:30px;
+   font-weight:800;
+   width:100%;
+}
+.editor_title input::placeholder{
+  color: var(--color-dark);
+}
+.editor_font_style{
+  width:30%;
+}
+.editor_btn{
+    width:40px;
+    height:40px;
+    border-radius:5px;
+    cursor:pointer;
+    background:transparent;
+    outline:none;
+    user-select:none;
+}
+.editor_btn:hover{
+  background:hsl(162, 92%, 95%)
+}
+.editor_btn:hover svg{
+  /* --color-primary:hsl(162, 92%, 39%); */
+  fill:var(--color-primary);
+}
+.editor_btn svg{
+  width:24px;
+  height:24px;
+}
+.editor_btn span{
+   font-size:24px;
+}
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   [class*="col-"] {
@@ -303,5 +335,21 @@ body{
     display: flex;
     justify-content: flex-end;
   }
- 
+ .col-offset-2{
+   margin-left:0;
+ }
+ .editor_title input{
+  font-size:20px;
+}
+.editor_font_style{
+  width:50%;
+}
+}
+@keyframes bounce {
+  to{
+    transform:scale(0.5);
+  }
+  from{
+   transform:scale(1);
+  }
 }

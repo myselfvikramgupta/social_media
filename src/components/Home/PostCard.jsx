@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {LikeIcon,CommentIcon,SharedIcon,BookMarkIcon} from './svgIcons';
+import {LikeIcon,CommentIcon,SharedIcon,BookMarkIcon} from '../svgIcons';
 function PostCard({post,id}) {
     const {name,title,story,like,comment,share,saved}={...post};
     const [totalLike,setTotalLike]=useState(like);

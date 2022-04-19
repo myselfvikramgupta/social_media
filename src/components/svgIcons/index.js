@@ -8,3 +8,6 @@ export { default as SettingIcon} from './SettingIcon';
 export { default as CompassIcon} from './CompassIcon';
 export { default as CloseIcon} from './CloseIcon';
 export { default as MenuIcon} from './MenuIcon';
+export { default as TypeBoldIcon} from './TypeBoldIcon';
+export { default as TypeItalicIcon} from './TypeItalicIcon';
+export { default as TypeUnderlineIcon} from './TypeUnderlineIcon';

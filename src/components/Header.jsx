@@ -1,4 +1,5 @@
 import React from 'react'
+import { Outlet } from "react-router-dom";
 import {MenuIcon} from './svgIcons'
 const Header = () => {
   const sideMenuOpen=()=>{
@@ -6,6 +7,7 @@ const Header = () => {
      menuBtn.classList.add('active')
   }
   return (
+    <>
     <div className='header'>
       <div className='container d_flex_space_between'>
         <div className='menu_wrap'>
@@ -16,6 +18,8 @@ const Header = () => {
         <button className="btn btn_primary">Login</button>
       </div>
     </div>
+    <Outlet />
+    </>
   )
 }
 

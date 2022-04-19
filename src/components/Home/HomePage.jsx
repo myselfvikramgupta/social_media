@@ -1,8 +1,7 @@
 import React from 'react'
-
-import  Sidebar from './components/Sidebar'
-import  Post from './components/Post'
-const Main = () => {
+import  Sidebar from './../Sidebar'
+import  Post from './Post'
+const HomePage = () => {
     return (
         <div className='container'>
             <div className="main d_flex_space_between">
@@ -14,7 +13,7 @@ const Main = () => {
                         <Post />
                     </div>
                     <div className='col-3'>
-
+                        
                     </div>
                 </div>
             </div>
@@ -23,4 +22,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default HomePage
