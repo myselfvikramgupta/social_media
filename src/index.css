@@ -251,6 +251,16 @@ a{
    font-weight:800;
    width:100%;
 }
+.text_editor{
+  padding:20px 10px;
+}
+.text_editor textarea{
+  font-size:16px;
+  font-weight:500;
+  width:100%;
+  resize:none;
+  height: 30vh;
+}
 .editor_title input::placeholder{
   color: var(--color-dark);
 }
@@ -279,6 +289,19 @@ a{
 }
 .editor_btn span{
    font-size:24px;
+}
+.post_btn{
+  margin-top:20px;
+  width:100%;
+  display:flex;
+  justify-content:flex-end;
+}
+.post_btn button:nth-child(1){
+  background:transparent;
+  border:2px solid var(--color-primary);
+ }
+.post_btn button:nth-child(2){
+ margin-left:15px;
 }
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */

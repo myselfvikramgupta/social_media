@@ -2,6 +2,7 @@ import React from 'react'
 import {TypeUnderlineIcon,TypeItalicIcon,TypeBoldIcon} from './../svgIcons'
 const PostEditor = () => {
     return (
+        <>
         <div className='card'>
             <div className="card_body ">
                 <div className="editor_title">
@@ -16,10 +17,18 @@ const PostEditor = () => {
                     <div className="editor_emoji">
                         <button className="editor_btn"><span>🙂</span></button>
                     </div>
+                   
+                </div>
+                <div className=" text_editor">
+                      <textarea type="text"  placeholder="Write your story" ></textarea>
                 </div>
             </div>
 
         </div>
+        <div className="post_btn">
+            <button className="btn">Save Draf</button><button className="btn btn_primary">Post</button>
+        </div>
+        </>
     )
 }
 
