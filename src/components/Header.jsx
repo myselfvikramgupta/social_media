@@ -12,7 +12,7 @@ const Header = () => {
       <div className='container d_flex_space_between'>
         <div className='menu_wrap'>
             <button className='colse_bnt' onClick={sideMenuOpen}><MenuIcon /></button>
-           <h1 className="header_title">The Real Dairy</h1>
+            <img src="/images/logo.png" alt="logo" className="logo" />
         </div>
         
         <button className="btn btn_primary">Login</button>

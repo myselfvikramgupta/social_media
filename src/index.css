@@ -26,8 +26,8 @@ body{
   width:80%;
   margin:0 auto;
 }
-button:focus{
-  background:transparent ;
+a{
+  color:inherit;
 }
 .row::after {
   content: "";
@@ -68,9 +68,8 @@ button:focus{
   width:100%;
 }
 
-.header_title{
-  font-size:1.2rem;
-  letter-spacing: 2px;
+.logo{
+  width:200px;
 }
 .main{
   margin-top:80px;
@@ -308,8 +307,9 @@ button:focus{
     align-items: center;
   }
   
-  .header_title{
-    margin-left: 0.7rem;
+  .logo {
+    width: 180px;
+    margin-top: -10px;
   }
   .side_menu{
     position: fixed;
