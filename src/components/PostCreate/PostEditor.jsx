@@ -25,7 +25,7 @@ const PostEditor = () => {
             </div>
 
         </div>
-        <div className="post_btn">
+        <div className="text_editor_btn">
             <button className="btn">Save Draf</button><button className="btn btn_primary">Post</button>
         </div>
         </>

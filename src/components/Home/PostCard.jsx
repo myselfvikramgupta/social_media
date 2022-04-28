@@ -62,26 +62,26 @@ function PostCard({post,id}) {
         </div>
     </div>
     <div className="card_body">
-        {story} ... <em>Read More</em>
+        {`${story.substring(0,200) }...`}  <a href="#"><em>Read More</em></a>
     </div>
     <div className="card_footer ">
     <div className="d_flex_space_between">
         <div className="post_like_section d_flex_space_between">
-            <div className={`post_like ${isLiked ? 'active' : ''}`} onClick={updateLike}>
-                <LikeIcon />
+            <div className={`post_like ${isLiked ? 'active' : ''}`} >
+                <button onClick={updateLike}><LikeIcon  /></button>
                 <span>{numberFormat(totalLike)}</span>
             </div>
-            <div className="post_like" onClick={updateComment}>
-            <CommentIcon />
+            <div className="post_like" >
+            <button onClick={updateComment}><CommentIcon /></button>
             <span>{numberFormat(totalComment)}</span>
             </div>
-            <div className="post_like" onClick={updateShare}>
-            <SharedIcon />
+            <div className="post_like" >
+            <button onClick={updateShare}> <SharedIcon /></button>
             <span>{numberFormat(totalShare)}</span>
             </div>
         </div>
-        <div className={`post_like ${isBookMark ? 'active' : ''}`} onClick={updateBookMark}>
-        <BookMarkIcon />
+        <div className={`post_like ${isBookMark ? 'active' : ''}`} >
+        <button onClick={updateBookMark}><BookMarkIcon /></button>
        <span>{numberFormat(totalBookMark)}</span>
         </div>
         </div>
