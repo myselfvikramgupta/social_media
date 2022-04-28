@@ -62,7 +62,7 @@ function PostCard({post,id}) {
         </div>
     </div>
     <div className="card_body">
-        {`${story.substring(0,200) }...`}  <a href="#"><em>Read More</em></a>
+        {`${story.substring(0,200) }...`}  <a href="/"><em>Read More</em></a>
     </div>
     <div className="card_footer ">
     <div className="d_flex_space_between">
